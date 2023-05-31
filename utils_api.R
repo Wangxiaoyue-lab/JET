@@ -15,6 +15,6 @@ utils_pca_cpp <- function(data, dims) {
 utils_nmf_cpp <- function(V, k) {
     library(Rcpp)
     library(RcppArmadillo)
-    sourceCpp("./fast_pca.cpp")
+    sourceCpp("./fast_nmf.cpp")
     nmf_cpp(V, k)
 }
