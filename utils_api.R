@@ -11,3 +11,10 @@ utils_pca_cpp <- function(data, dims) {
     sourceCpp("./utils/cpp/fast_pca.cpp")
     pca_cpp(data, dims)
 }
+
+utils_nmf_cpp <- function(V, k) {
+    library(Rcpp)
+    library(RcppArmadillo)
+    sourceCpp("./utils/cpp/fast_pca.cpp")
+    nmf_cpp(data, dims)
+}
